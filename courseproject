@@ -1,0 +1,28 @@
+#Katherine Anderson
+
+import array
+import math
+import statistics as st
+
+A= array.array ('i', [])
+
+for x in range (0,10):
+    n= int(input( "Enter a temperature:"))
+    if n>=80:
+        print("Temperature not valid")
+
+    elif n<= 68:
+        print("Temperature not valid")
+
+    else:
+        A.append(n)
+
+std_dev= st.stdev(A)
+
+
+
+if std_dev<=1:
+    print("COMFY")
+
+else:
+    print("NOT COMFY")
